@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0A0F"/>
+      <stop offset="0.55" stop-color="#101018"/>
+      <stop offset="1" stop-color="#0B0B12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="360" rx="0" fill="url(#bg)"/>
+  <ellipse cx="250" cy="180" rx="340" ry="300" fill="url(#glow)"/>
+  <ellipse cx="1120" cy="60" rx="360" ry="300" fill="url(#glow2)"/>
+
+  <!-- subtle dotted grid -->
+  <g fill="#FFFFFF" opacity="0.05">
+    <circle cx="900" cy="300" r="2"/><circle cx="950" cy="300" r="2"/><circle cx="1000" cy="300" r="2"/>
+    <circle cx="1050" cy="300" r="2"/><circle cx="1100" cy="300" r="2"/><circle cx="1150" cy="300" r="2"/>
+    <circle cx="900" cy="330" r="2"/><circle cx="950" cy="330" r="2"/><circle cx="1000" cy="330" r="2"/>
+    <circle cx="1050" cy="330" r="2"/><circle cx="1100" cy="330" r="2"/><circle cx="1150" cy="330" r="2"/>
+  </g>
+
+  <!-- atom mark -->
+  <g transform="translate(196,180)" stroke="url(#accent)" fill="none">
+    <g filter="url(#soft)" opacity="0.65" stroke-width="6">
+      <ellipse rx="110" ry="42"/>
+      <ellipse rx="110" ry="42" transform="rotate(60)"/>
+      <ellipse rx="110" ry="42" transform="rotate(120)"/>
+    </g>
+    <g stroke-width="3.5">
+      <ellipse rx="110" ry="42"/>
+      <ellipse rx="110" ry="42" transform="rotate(60)"/>
+      <ellipse rx="110" ry="42" transform="rotate(120)"/>
+    </g>
+    <circle r="13" fill="#FFFFFF" stroke="none"/>
+    <circle r="13" fill="url(#accent)" stroke="none" opacity="0.9"/>
+    <circle cx="110" cy="0" r="7" fill="#22D3EE" stroke="none"/>
+    <circle cx="-55" cy="95" r="7" fill="#A855F7" stroke="none"/>
+    <circle cx="-55" cy="-95" r="7" fill="#6366F1" stroke="none"/>
+  </g>
+
+  <!-- text block -->
+  <g transform="translate(404,0)">
+    <text x="3" y="132" fill="#22D3EE" font-size="20" font-weight="700" letter-spacing="5">A&#160;&#160;&#160;QUANTUM&#160;&#160;&#160;PLATFORM</text>
+    <text x="0" y="214" fill="#FFFFFF" font-size="84" font-weight="800" letter-spacing="-1">RoRo Quantum</text>
+    <rect x="4" y="238" width="118" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="4" y="292" fill="#9CA3AF" font-size="27" font-weight="400">Quantum-grade security &amp; computing — built for everyday software.</text>
+  </g>
+</svg>
