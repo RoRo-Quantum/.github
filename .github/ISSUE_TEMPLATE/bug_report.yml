@@ -1,0 +1,41 @@
+name: 🐛 Bug Report
+description: Found a bug? Let us know.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please fill in the fields below with as much detail as possible.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what actually happened?
+      placeholder: Describe clearly...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Step by step.
+      placeholder: |
+        1. Do '...'
+        2. Click '...'
+        3. See the error
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / Environment
+      description: SDK version, OS, language version, etc.
+      placeholder: "e.g. v1.2.0, macOS 15, Swift 6.1"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / screenshots
+      render: shell
