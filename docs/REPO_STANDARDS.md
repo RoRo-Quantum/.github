@@ -38,11 +38,9 @@ Consistency keeps the org professional and easy to maintain.
 
 ## Team access
 
-| Team | Typical access |
-|------|----------------|
-| `@RoRo-Quantum/core` | admin (private + infra) |
-| `@RoRo-Quantum/maintainers` | maintain / write |
-| `@RoRo-Quantum/sdk` | write (public SDKs) |
+We're a small team right now, so access is granted **per person** directly on
+each repo — no teams yet. As we grow, we'll introduce teams (e.g. `core`,
+`sdk`, `maintainers`) and map them to repos here.
 
 ## Labels
 
